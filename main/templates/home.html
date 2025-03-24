@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <h1>{{ greeting }}</h1>
+    <nav>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'about' %}">About</a> |
+        <a href="{% url 'skills' %}">Skills</a> |
+        <a href="{% url 'projects' %}">Projects</a>
+    </nav>
+</body>
+</html>
