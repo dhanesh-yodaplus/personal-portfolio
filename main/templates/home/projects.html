@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
+{% extends 'home/base.html' %}
+
+{% block title %}Projects{% endblock %}
+
+
+{% block content %}
     <h1>Projects</h1>
     <ul>
         {% for project in projects %}
             <li>{{ project }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
