@@ -9,7 +9,7 @@ def about(request):
     return render(request,'home/about.html',context)
 
 def skills(request):
-    context = {'title': 'Skills', 'skills': ['Python','SQL','Machine Learning', 'Big Data','Django', 'Git', 'HTML', 'CSS']}
+    context = {'title': 'Skills', 'skills': ['Python','SQL','Machine Learning', 'Big Data','Django', 'Git', 'PySpark', 'AWS']}
     return render(request, 'home/skills.html', context)
 
 def projects(request):
